@@ -1,0 +1,168 @@
+/* цвет текста #757575;*/
+/* цвет активной ссылки #2196F3;*/
+/* текст заголовков #212121; */
+/* цвет хэдера #FFFFFF;*/
+/* цвет секции с сотрудниками #F5F4FA;*/
+/* цвет хэро секции и футера #2F303A;*/
+/* цвет секций #F5F5F5;  */
+/* цвет логотипа #000000; */
+
+:root{
+    --primary-text-color:  #757575;
+    --title-text-color: #212121;
+    --filter-text: #212121;
+    --active-link-color: #2196F3;
+    --logo-different-color: #2196f3;
+    --background-color-button: #2196f3;
+    --bcg-hero-section: #2F303A;
+    --bcg-footer-section: #2f303a;
+    --color-secondary-section: #F5F4FA;
+    --defolt-color-section:#F5F5F5;
+    --header-color:#ffffff;
+    --major-text: #ffffff;
+    --logo-text: #000000;
+    --border-color-card:EEEEEE;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--primary-text-color);
+}
+.list{
+    list-style:none;
+}
+a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+}
+/* хєдер*/
+.logo-link{
+    font-size: 26px;
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--logo-text);
+    letter-spacing: 0.03em;
+}
+.logo-link .accent{
+    color:var(--logo-different-color);
+}
+
+.nav-item a:hover,
+.nav-item a:focus, 
+.contact a:hover,
+.contact a:focus {
+    color:var(--active-link-color);
+}
+.contact a{
+    color: var(--primary-text-color)
+}
+/*основной контент*/
+.hero-section{
+    background-color: var(--bcg-hero-section);
+}
+.hero-section h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--major-text);
+}
+.hero-section button{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:var(--major-text);
+    background-color: var(--background-color-button);
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.benefits h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.benefits p{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.benefits h2{
+ 
+}
+.team{
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.team h3, h2{
+    font-weight: 500;
+    color: var(--title-text-color);
+}
+.team p{
+    
+}
+footer{
+    background-color: var(--bcg-footer-section);
+}
+footer a{
+    font-style: normal;
+    color:var(--major-text);
+}
+footer .change-color{
+    color: var(--major-text);
+}
+.button-filter button{
+    font-family:inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.button-filter button:hover,
+.button-filter button:focus{
+    background-color: var(--background-color-button);
+    color: var(--major-text);
+}
+.content-example h2{
+font-weight: 700;
+font-size: 18px;
+line-height: 2.0;
+letter-spacing: 0.06em;
+color: var(--title-text-color);
+}
+.content-example p{
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
+color: var(--primary-text-color)
+}
