@@ -25,65 +25,65 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 .list{
     list-style:none;
 }
-a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14px;
-    letter-spacing: 0.02em;
+.link {
     color: #212121;
     text-decoration: none;
 }
 /* хєдер*/
 .logo-link{
-    font-size: 26px;
-    text-decoration: none;
     font-family: Raleway;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     color: var(--logo-text);
-    letter-spacing: 0.03em;
 }
 .logo-link .accent{
     color:var(--logo-different-color);
 }
-
-.nav-item a:hover,
-.nav-item a:focus, 
-.contact a:hover,
-.contact a:focus {
+.header-list{
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.current{
+    color: var(--active-link-color);
+}
+.address-link:hover,
+.address-link:focus,
+.nav-item .link:hover,
+.nav-item .link:focus, 
+.contact-link:hover,
+.contact-link:focus {
     color:var(--active-link-color);
 }
-.contact a{
+.contact-link{
     color: var(--primary-text-color)
 }
 /*основной контент*/
 .hero-section{
     background-color: var(--bcg-hero-section);
 }
-.hero-section h1{
+.caption-hero{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--major-text);
 }
-.hero-section button{
+.button-hero{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     color:var(--major-text);
     background-color: var(--background-color-button);
@@ -101,68 +101,69 @@ a {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.benefits h3{
-    font-weight: 700;
+.benefits-caption{
     font-size: 14px;
+    font-weight: 700;
     line-height: 1.14px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-.benefits p{
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-.benefits h2{
- 
+.function-caption, .team-caption{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color:var(--title-text-color);
 }
 .team{
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+   background-color: var(--color-secondary-section);
 }
-.team h3, h2{
+.team-caption-list{
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
     color: var(--title-text-color);
 }
-.team p{
-    
+.team-text-list{
+    font-size: 16px;
+    line-height: 1.19;
 }
-footer{
+.footer{
     background-color: var(--bcg-footer-section);
 }
-footer a{
+.footer .link{
     font-style: normal;
-    color:var(--major-text);
+}
+.address-link{
+    color: var(--major-text);
 }
 footer .change-color{
     color: var(--major-text);
 }
-.button-filter button{
-    font-family:inherit;
-    font-style: normal;
+
+/*портфолио*/
+.button-filter{
+    font-family: inherit;
+    letter-spacing: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color:var(--title-text-color);
+    cursor: pointer;
 }
-.button-filter button:hover,
-.button-filter button:focus{
+.button-filter:hover,
+.button-filter:focus{
     background-color: var(--background-color-button);
     color: var(--major-text);
 }
-.content-example h2{
+.example-caption{
 font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
 color: var(--title-text-color);
 }
-.content-example p{
+.example-text{
 font-size: 16px;
 line-height: 1.9;
-letter-spacing: 0.03em;
 color: var(--primary-text-color)
 }
